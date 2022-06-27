@@ -1,1 +1,1 @@
-web: gunicorn mysql.wsgi --log-file -
+web: gunicorn django-check.wsgi --log-file -
