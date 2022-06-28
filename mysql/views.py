@@ -4,7 +4,7 @@ import pymysql
 
 
 def printHello(request):
-    conn = pymysql.connect(
+    '''conn = pymysql.connect(
         host='localhost',
         user='root', 
         password = "hello@123",
@@ -14,5 +14,5 @@ def printHello(request):
     curr.execute("select * from student")
     output = curr.fetchall()
     for i in output:
-        print(i)
-    return render(request,'hello.html',{"studentData":output[0]})
+        print(i)'''
+    return render(request,'hello.html',{"studentData":'hello'})
